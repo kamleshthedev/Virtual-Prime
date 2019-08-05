@@ -1,0 +1,74 @@
+<!--
+  <nav class="navbar navbar-dark sticky-top  navbar-expand bg-primary">
+      <div class="container">
+
+    <a class="navbar-brand font-weight-bold font-serif" href="#">Virtual Prime</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+              <a routerLink="/" class="nav-link">Home</a>
+            </li>
+
+            <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+              <a routerLink="/users" class="nav-link">Tv Shows</a>
+            </li>
+
+            <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+              <a routerLink="/posts" class="nav-link">Movies</a>
+            </li>
+
+            <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+                <a routerLink="/news" class="nav-link">News</a>
+            </li>
+      </ul>
+    </div>
+  </div>
+  </nav> -->
+
+
+
+ <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+   <div class="container">
+     <a class="navbar-brand text-light">Virtual Prime</a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain">
+       <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMain">
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+                <a routerLink="/" class="nav-link">Home</a>
+              </li>
+
+              <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+                <a routerLink="/users" class="nav-link">Tv Shows</a>
+              </li>
+
+              <li class="nav-item dropdown"  [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Movies
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Now Playing</a>
+                    <a class="dropdown-item" routerLink="/posts">Popular</a>
+                    <a class="dropdown-item" href="#">Geners</a>
+                    <a class="dropdown-item" href="#">Upcoming</a>
+                    <a class="dropdown-item" href="#">Best Ratings</a>
+                  </div>
+              </li>
+
+              <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+                  <a routerLink="/news" class="nav-link">News</a>
+              </li>
+
+
+        </ul>
+      </div>
+   </div>
+
+ </nav>

@@ -1,0 +1,42 @@
+<div class="container pt-3 pb-3">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Movies</li>
+        </ol>
+      </nav>
+  <div class="row">
+    <div class="col-sm-6 col-md-4 col-lg-3 mt-4" *ngFor="let item of list">
+        <div class="card h-100">
+            <img class="card-img-top" src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/{{item.poster_path}}">
+            <div class="card-body">
+              <p class="card-title"> {{ item.original_title }} </p>
+            </div>
+            <div class="card-footer">
+                <small><b>Ratings: {{item.vote_average}}</b> </small>
+                <i class="ml-2 fa fa-star"></i>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center mt-5">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+</div>

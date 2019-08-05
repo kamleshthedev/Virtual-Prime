@@ -1,0 +1,22 @@
+<div class="container pt-3">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Tv Showes</li>
+        </ol>
+      </nav>
+  <div class="row" >
+    <div class="col-sm-6 col-md-4 col-lg-3 mt-4" *ngFor="let item of tvList">
+        <div class="card h-100">
+            <img class="card-img-top" src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/{{item.poster_path}}">
+            <div class="card-body">
+              <h5 class="card-title"> {{ item.original_name }} </h5>
+            </div>
+            <div class="card-footer">
+                <small><b>Ratings: {{item.vote_average}}</b> </small>
+                <i class="ml-2 fa fa-star"></i>
+            </div>
+    </div>
+    </div>
+    </div>
+</div>
